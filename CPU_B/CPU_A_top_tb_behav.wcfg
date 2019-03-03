@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CPU_A_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CPU_A_top_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="20000001fs"></ZoomEndTime>
+      <Cursor1Time time="8000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="104"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/CPU_A_top_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/S" type="array">
+      <obj_property name="ElementShortName">S[7:0]</obj_property>
+      <obj_property name="ObjectShortName">S[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/data_b" type="array">
+      <obj_property name="ElementShortName">data_b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_b[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/carry_out" type="logic">
+      <obj_property name="ElementShortName">carry_out</obj_property>
+      <obj_property name="ObjectShortName">carry_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/JUMP" type="logic">
+      <obj_property name="ElementShortName">JUMP</obj_property>
+      <obj_property name="ObjectShortName">JUMP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/BRANCH" type="logic">
+      <obj_property name="ElementShortName">BRANCH</obj_property>
+      <obj_property name="ObjectShortName">BRANCH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/ALUSRCB" type="logic">
+      <obj_property name="ElementShortName">ALUSRCB</obj_property>
+      <obj_property name="ObjectShortName">ALUSRCB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/WRITEMEM" type="logic">
+      <obj_property name="ElementShortName">WRITEMEM</obj_property>
+      <obj_property name="ObjectShortName">WRITEMEM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/WRITEREG" type="logic">
+      <obj_property name="ElementShortName">WRITEREG</obj_property>
+      <obj_property name="ObjectShortName">WRITEREG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/MEMTOREG" type="logic">
+      <obj_property name="ElementShortName">MEMTOREG</obj_property>
+      <obj_property name="ObjectShortName">MEMTOREG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/REGDES" type="logic">
+      <obj_property name="ElementShortName">REGDES</obj_property>
+      <obj_property name="ObjectShortName">REGDES</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/WRFLAG" type="logic">
+      <obj_property name="ElementShortName">WRFLAG</obj_property>
+      <obj_property name="ObjectShortName">WRFLAG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/ALUC" type="array">
+      <obj_property name="ElementShortName">ALUC[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUC[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/Q1" type="array">
+      <obj_property name="ElementShortName">Q1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Q1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/q" type="array">
+      <obj_property name="ElementShortName">q[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/PC" type="array">
+      <obj_property name="ElementShortName">PC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_A_top_tb/myCPU_A_top/myRAM/unit" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">unit[255:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">unit[255:0][7:0]</obj_property>
+      <obj_property name="label">unit[39:30][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

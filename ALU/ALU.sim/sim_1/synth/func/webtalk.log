@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Jun 24 20:45:44 2017
+# Process ID: 10632
+# Current directory: G:/Vivado_Project/Summer1/ALU/ALU.sim/sim_1/synth/func
+# Command line: wbtcv.exe -mode batch -source G:/Vivado_Project/Summer1/ALU/ALU.sim/sim_1/synth/func/xsim.dir/ALU_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: G:/Vivado_Project/Summer1/ALU/ALU.sim/sim_1/synth/func/webtalk.log
+# Journal file: G:/Vivado_Project/Summer1/ALU/ALU.sim/sim_1/synth/func\webtalk.jou
+#-----------------------------------------------------------
+source G:/Vivado_Project/Summer1/ALU/ALU.sim/sim_1/synth/func/xsim.dir/ALU_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 61.172 ; gain = 0.277
+INFO: [Common 17-206] Exiting Webtalk at Sat Jun 24 20:45:49 2017...

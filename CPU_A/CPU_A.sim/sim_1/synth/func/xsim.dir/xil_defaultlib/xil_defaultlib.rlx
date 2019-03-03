@@ -1,0 +1,6 @@
+0.6
+2017.1
+Apr 14 2017
+19:10:27
+E:/VivadoProjects/Ex1/CPU_A/CPU_A.sim/sim_1/synth/func/CPU_A_top_tb_func_synth.v,1506233715,verilog,,,,ALU;CPU_A_top;PC;RAM;ROM;ROM_blk_mem_gen_0_0;ROM_blk_mem_gen_0_0_blk_mem_gen_generic_cstr;ROM_blk_mem_gen_0_0_blk_mem_gen_prim_width;ROM_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init;ROM_blk_mem_gen_0_0_blk_mem_gen_top;ROM_blk_mem_gen_0_0_blk_mem_gen_v8_3_6;ROM_blk_mem_gen_0_0_blk_mem_gen_v8_3_6_synth;ROM_wrapper;ROM_xlconstant_0_0;Register;glbl,,,,,,,,
+E:/VivadoProjects/Ex1/CPU_A/CPU_A.srcs/sim_1/new/CPU_A_top_tb.v,1506219853,verilog,,,,CPU_A_top_tb,,,,,,,,

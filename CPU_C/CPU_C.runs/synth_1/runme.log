@@ -1,0 +1,738 @@
+
+*** Running vivado
+    with args -log CPU_A_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_A_top.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source CPU_A_top.tcl -notrace
+Command: synth_design -top CPU_A_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11084 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 348.215 ; gain = 83.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CPU_A_top' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/new/CPU_A_top.v:3]
+	Parameter NO_OP bound to: 3'b000 
+	Parameter PLUS bound to: 3'b001 
+	Parameter MINUS bound to: 3'b010 
+	Parameter AND bound to: 3'b011 
+	Parameter OR bound to: 3'b100 
+	Parameter CMP bound to: 3'b101 
+	Parameter EQ bound to: 3'b110 
+INFO: [Synth 8-638] synthesizing module 'ALU' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:14]
+WARNING: [Synth 8-6014] Unused sequential element tempa_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:21]
+WARNING: [Synth 8-6014] Unused sequential element tempb_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:21]
+WARNING: [Synth 8-6014] Unused sequential element tempS_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (1#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-638] synthesizing module 'ctrlunit' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/CtrlUnit/CtrlUnit.srcs/sources_1/new/ctrlunit.v:4]
+INFO: [Synth 8-256] done synthesizing module 'ctrlunit' (2#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/CtrlUnit/CtrlUnit.srcs/sources_1/new/ctrlunit.v:4]
+INFO: [Synth 8-638] synthesizing module 'Register' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/Ex1_Register/Ex1_Register.srcs/sources_1/new/Register.v:3]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/Ex1_Register/Ex1_Register.srcs/sources_1/new/Register.v:20]
+INFO: [Synth 8-256] done synthesizing module 'Register' (3#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/Ex1_Register/Ex1_Register.srcs/sources_1/new/Register.v:3]
+INFO: [Synth 8-638] synthesizing module 'ROM_2' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/myROM_2.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ROM_2' (4#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/myROM_2.v:1]
+INFO: [Synth 8-638] synthesizing module 'PC' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/PC/PC.srcs/sources_1/new/PC.v:4]
+INFO: [Synth 8-256] done synthesizing module 'PC' (5#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/PC/PC.srcs/sources_1/new/PC.v:4]
+INFO: [Synth 8-638] synthesizing module 'RAM' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/RAM/RAM.srcs/sources_1/new/RAM.v:3]
+WARNING: [Synth 8-290] fork/join block will be implemented as sequential block [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/RAM/RAM.srcs/sources_1/new/RAM.v:16]
+WARNING: [Synth 8-5788] Register unit_reg in module RAM is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'unit_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "unit_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'RAM' (6#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/RAM/RAM.srcs/sources_1/new/RAM.v:3]
+INFO: [Synth 8-638] synthesizing module 'FLAG' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/FLAG/FLAG.srcs/sources_1/new/FLAG.v:3]
+INFO: [Synth 8-256] done synthesizing module 'FLAG' (7#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/FLAG/FLAG.srcs/sources_1/new/FLAG.v:3]
+INFO: [Synth 8-638] synthesizing module 'divider' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/new/divider.v:5]
+INFO: [Synth 8-256] done synthesizing module 'divider' (8#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/new/divider.v:5]
+INFO: [Synth 8-638] synthesizing module 'IO_2' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:3]
+WARNING: [Synth 8-567] referenced signal 'W' should be on the sensitivity list [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:49]
+WARNING: [Synth 8-567] referenced signal 'addr' should be on the sensitivity list [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:49]
+WARNING: [Synth 8-567] referenced signal 'Din' should be on the sensitivity list [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:49]
+INFO: [Synth 8-256] done synthesizing module 'IO_2' (9#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:3]
+INFO: [Synth 8-638] synthesizing module 'seg' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/seg.v:3]
+	Parameter S0 bound to: 2'b00 
+	Parameter S1 bound to: 2'b01 
+	Parameter S2 bound to: 2'b10 
+	Parameter S3 bound to: 2'b11 
+INFO: [Synth 8-638] synthesizing module 'result_process' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/result_process.v:7]
+INFO: [Synth 8-638] synthesizing module 'Binary2BCD' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/Binary2BCD.v:4]
+INFO: [Synth 8-256] done synthesizing module 'Binary2BCD' (10#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/Binary2BCD.v:4]
+INFO: [Synth 8-256] done synthesizing module 'result_process' (11#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/result_process.v:7]
+WARNING: [Synth 8-567] referenced signal 'data_inL' should be on the sensitivity list [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/seg.v:38]
+WARNING: [Synth 8-567] referenced signal 'data_inH' should be on the sensitivity list [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/seg.v:38]
+INFO: [Synth 8-256] done synthesizing module 'seg' (12#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/seg.v:3]
+INFO: [Synth 8-638] synthesizing module 'key_scan_top' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/VivadoProjects/key_scan_top.v:4]
+	Parameter NO_OP bound to: 3'b000 
+	Parameter PLUS bound to: 3'b001 
+	Parameter MINUS bound to: 3'b010 
+	Parameter AND bound to: 3'b011 
+	Parameter OR bound to: 3'b100 
+	Parameter CMP bound to: 3'b101 
+INFO: [Synth 8-638] synthesizing module 'keyboard_' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:2]
+	Parameter SCAN_ROW0 bound to: 3'b000 
+	Parameter SCAN_ROW1 bound to: 3'b001 
+	Parameter SCAN_ROW2 bound to: 3'b010 
+	Parameter SCAN_ROW3 bound to: 3'b011 
+	Parameter KEY_PRESSED bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:26]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:71]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:99]
+WARNING: [Synth 8-5788] Register flag1_reg in module keyboard_ is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:75]
+WARNING: [Synth 8-5788] Register flag2_reg in module keyboard_ is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:76]
+WARNING: [Synth 8-5788] Register col_val_reg in module keyboard_ is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:87]
+WARNING: [Synth 8-5788] Register row_val_reg in module keyboard_ is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:88]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_' (13#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:2]
+INFO: [Synth 8-638] synthesizing module 'keyboardRead' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/keyboardRead.v:4]
+	Parameter SRC_S bound to: 4'b0000 
+	Parameter SRC_0 bound to: 4'b0001 
+	Parameter SRC_1 bound to: 4'b0010 
+	Parameter SRC_2 bound to: 4'b0011 
+	Parameter DST_S bound to: 4'b0100 
+	Parameter DST_0 bound to: 4'b0101 
+	Parameter DST_1 bound to: 4'b0110 
+	Parameter DST_2 bound to: 4'b0111 
+	Parameter FINISH bound to: 4'b1000 
+	Parameter SRC_N bound to: 4'b1001 
+	Parameter DST_N bound to: 4'b1010 
+	Parameter CONTINUE bound to: 4'b1011 
+	Parameter CON_S bound to: 4'b1100 
+	Parameter NO_OP bound to: 3'b000 
+	Parameter PLUS bound to: 3'b001 
+	Parameter MINUS bound to: 3'b010 
+	Parameter AND bound to: 3'b011 
+	Parameter OR bound to: 3'b100 
+	Parameter CMP bound to: 3'b101 
+	Parameter EQ bound to: 3'b110 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/keyboardRead.v:201]
+WARNING: [Synth 8-6014] Unused sequential element tmp_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/keyboardRead.v:142]
+WARNING: [Synth 8-5788] Register state_reg in module keyboardRead is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/keyboardRead.v:72]
+WARNING: [Synth 8-5788] Register disp_reg in module keyboardRead is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/keyboardRead.v:74]
+WARNING: [Synth 8-5788] Register tmpOP_reg in module keyboardRead is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/keyboardRead.v:77]
+INFO: [Synth 8-256] done synthesizing module 'keyboardRead' (14#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/keyboardRead.v:4]
+WARNING: [Synth 8-350] instance 'myKeyboardRead' of module 'keyboardRead' requires 12 connections, but only 11 given [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/VivadoProjects/key_scan_top.v:55]
+INFO: [Synth 8-256] done synthesizing module 'key_scan_top' (15#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/VivadoProjects/key_scan_top.v:4]
+INFO: [Synth 8-256] done synthesizing module 'CPU_A_top' (16#1) [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/new/CPU_A_top.v:3]
+WARNING: [Synth 8-3331] design ROM_2 has unconnected port CLK
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 403.324 ; gain = 138.133
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 403.324 ; gain = 138.133
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/constrs_1/imports/new/Keyboard_pin.xdc]
+Finished Parsing XDC File [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/constrs_1/imports/new/Keyboard_pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/constrs_1/imports/new/Keyboard_pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CPU_A_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CPU_A_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 705.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 705.727 ; gain = 440.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 705.727 ; gain = 440.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 705.727 ; gain = 440.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "zero" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "JUMP" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WRITEMEM" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MEMTOREG" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/PC/PC.srcs/sources_1/new/PC.v:19]
+WARNING: [Synth 8-6014] Unused sequential element cnt_seg_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/new/divider.v:15]
+WARNING: [Synth 8-6014] Unused sequential element cnt_CPU_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/new/divider.v:23]
+WARNING: [Synth 8-6014] Unused sequential element cnt_keyboard_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/new/divider.v:31]
+INFO: [Synth 8-5546] ROM "W_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Dout" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "LED_1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'keyboard_'
+WARNING: [Synth 8-6014] Unused sequential element current_state_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:21]
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:29]
+INFO: [Synth 8-5546] ROM "val" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_pressed_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "col_val" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmpOP" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "LED_EQ" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'S_reg' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'carry_out_reg' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'Dout_reg' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:67]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[0]' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[1]' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[2]' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[3]' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[4]' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[5]' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[6]' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[7]' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/IO_2.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_ctrl_reg' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/seg.v:43]
+WARNING: [Synth 8-6014] Unused sequential element current_state_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:29]
+WARNING: [Synth 8-6014] Unused sequential element current_state_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:29]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               SCAN_ROW0 |                              000 |                           000000
+               SCAN_ROW1 |                              001 |                           000001
+               SCAN_ROW2 |                              010 |                           000010
+               SCAN_ROW3 |                              011 |                           000011
+             KEY_PRESSED |                              100 |                           000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'keyboard_'
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:29]
+WARNING: [Synth 8-6014] Unused sequential element current_state_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'val_reg' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/imports/imports/VivadoProjects/Keyboard_upload/Keyboard_upload.srcs/sources_1/imports/sources_1/imports/new/keyboard_.v:100]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/keyboardRead.v:203]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 705.727 ; gain = 440.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 25    
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 14    
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 12    
+	  14 Input      8 Bit        Muxes := 5     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 21    
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 7     
+	  15 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 263   
+	   8 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 8     
+	  17 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CPU_A_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module ctrlunit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  15 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+Module Register 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 4     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module RAM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 248   
+Module FLAG 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module IO_2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 9     
+	   8 Input      1 Bit        Muxes := 1     
+Module Binary2BCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 25    
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module result_process 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module seg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   4 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+Module keyboard_ 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input      6 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 8     
+	  17 Input      1 Bit        Muxes := 1     
+Module keyboardRead 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  14 Input      8 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 2     
+	  14 Input      2 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+Module key_scan_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "zero" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element cnt_seg_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/new/divider.v:15]
+WARNING: [Synth 8-6014] Unused sequential element cnt_CPU_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/new/divider.v:23]
+WARNING: [Synth 8-6014] Unused sequential element cnt_keyboard_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/new/divider.v:31]
+WARNING: [Synth 8-6014] Unused sequential element myKeyboardRead/disp_reg was removed.  [E:/VivadoProjects/Ex1/CPU_C/CPU_C.srcs/sources_1/imports/new/keyboardRead.v:74]
+WARNING: [Synth 8-3331] design ROM_2 has unconnected port CLK
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myKey_scan_top/myKeyboardRead/DSTH_reg[7] )
+INFO: [Synth 8-3886] merging instance 'myKey_scan_top/myKeyboardRead/DSTH_reg[6]' (FDCE) to 'myKey_scan_top/myKeyboardRead/DSTH_reg[5]'
+INFO: [Synth 8-3886] merging instance 'myKey_scan_top/myKeyboardRead/SRCH_reg[6]' (FDCE) to 'myKey_scan_top/myKeyboardRead/SRCH_reg[5]'
+INFO: [Synth 8-3886] merging instance 'myKey_scan_top/myKeyboardRead/DSTH_reg[5]' (FDCE) to 'myKey_scan_top/myKeyboardRead/DSTH_reg[4]'
+INFO: [Synth 8-3886] merging instance 'myKey_scan_top/myKeyboardRead/SRCH_reg[5]' (FDCE) to 'myKey_scan_top/myKeyboardRead/SRCH_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myKey_scan_top/myKeyboardRead/DSTH_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myKey_scan_top/myKeyboardRead/SRCH_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (mySeg/data_out_ctrl_reg[4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (mySeg/data_out_ctrl_reg[3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (mySeg/data_out_ctrl_reg[2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (mySeg/data_out_ctrl_reg[1]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (mySeg/data_out_ctrl_reg[0]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/SRCH_reg[4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/DSTH_reg[7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/DSTH_reg[4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/finish_reg) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myFLAG/Flagout_reg[7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myFLAG/Flagout_reg[6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myFLAG/Flagout_reg[5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myFLAG/Flagout_reg[4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myFLAG/Flagout_reg[3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myFLAG/Flagout_reg[2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myFLAG/Flagout_reg[1]) is unused and will be removed from module CPU_A_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 730.383 ; gain = 465.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|ROM_2       | data       | 256x16        | LUT            | 
+|seg         | data_out   | 32x8          | LUT            | 
+|seg         | data_out   | 32x8          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:09 . Memory (MB): peak = 807.340 ; gain = 542.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:09 . Memory (MB): peak = 808.344 ; gain = 543.152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/tmpOP_reg[7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/tmpOP_reg[6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/tmpOP_reg[5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/tmpOP_reg[4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/tmpOP_reg[3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/ALU_OP_reg[7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/ALU_OP_reg[6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/ALU_OP_reg[5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/ALU_OP_reg[4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myKey_scan_top/myKeyboardRead/ALU_OP_reg[3]) is unused and will be removed from module CPU_A_top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 838.402 ; gain = 573.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 838.402 ; gain = 573.211
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 838.402 ; gain = 573.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 838.402 ; gain = 573.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 838.402 ; gain = 573.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 838.402 ; gain = 573.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 838.402 ; gain = 573.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    69|
+|3     |LUT1   |   144|
+|4     |LUT2   |   281|
+|5     |LUT3   |    73|
+|6     |LUT4   |   112|
+|7     |LUT5   |   178|
+|8     |LUT6   |   931|
+|9     |MUXF7  |   277|
+|10    |MUXF8  |   128|
+|11    |FDCE   |    87|
+|12    |FDPE   |     2|
+|13    |FDRE   |  2116|
+|14    |LD     |   113|
+|15    |IBUF   |     6|
+|16    |OBUF   |    23|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+-------------+------+
+|      |Instance           |Module       |Cells |
++------+-------------------+-------------+------+
+|1     |top                |             |  4543|
+|2     |  myALU            |ALU          |   552|
+|3     |  myDivider        |divider      |   288|
+|4     |  myFLAG           |FLAG         |     8|
+|5     |  myIO_2           |IO_2         |   158|
+|6     |  myKey_scan_top   |key_scan_top |   209|
+|7     |    myKeyboardRead |keyboardRead |   141|
+|8     |    myKeyboard_    |keyboard_    |    68|
+|9     |  myPC             |PC           |   102|
+|10    |  myRAM            |RAM          |  2912|
+|11    |  myROM_2          |ROM_2        |    48|
+|12    |  myRegister       |Register     |    98|
+|13    |  mySeg            |seg          |   112|
++------+-------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 838.402 ; gain = 573.211
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 57 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:58 . Memory (MB): peak = 838.402 ; gain = 270.809
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 838.402 ; gain = 573.211
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 188 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 113 instances were transformed.
+  LD => LDCE: 113 instances
+
+181 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:18 . Memory (MB): peak = 838.402 ; gain = 577.148
+INFO: [Common 17-1381] The checkpoint 'E:/VivadoProjects/Ex1/CPU_C/CPU_C.runs/synth_1/CPU_A_top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.121 . Memory (MB): peak = 838.402 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 19 09:11:49 2017...

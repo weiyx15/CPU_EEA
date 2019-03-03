@@ -1,0 +1,5 @@
+CPU_A是实验2不加自编指令的CPU
+CPU_A1是实验2加上自编指令的CPU
+CPU_B是实验3中的“CPU_A”，即没有外设的CPU
+CPU_BB是实验3中的“CPU_B”，即有数码管的CPU
+CPU_C是实验3中的“CPU_C”，即有键盘和数码管的CPU

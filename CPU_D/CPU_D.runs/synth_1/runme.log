@@ -1,0 +1,13 @@
+
+*** Running vivado
+    with args -log CPU_A_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_A_top.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source CPU_A_top.tcl -notrace
+ERROR: [Common 17-69] Command failed: File 'E:/VivadoProjects/Ex1/CPU_D/CPU_D.srcs/sources_1/imports/imports/Ex1/CPU_BB/CPU_BB.srcs/sources_1/imports/new/seg.v' does not exist
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 19 12:53:57 2017...

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CPU_BB_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CPU_BB_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="65354703704fs"></ZoomStartTime>
+      <ZoomEndTime time="65404259260fs"></ZoomEndTime>
+      <Cursor1Time time="65546000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="104"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="37" />
+   <wvobject fp_name="/CPU_BB_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/S" type="array">
+      <obj_property name="ElementShortName">S[7:0]</obj_property>
+      <obj_property name="ObjectShortName">S[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/data_b" type="array">
+      <obj_property name="ElementShortName">data_b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_b[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/carry_out" type="logic">
+      <obj_property name="ElementShortName">carry_out</obj_property>
+      <obj_property name="ObjectShortName">carry_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/JUMP" type="logic">
+      <obj_property name="ElementShortName">JUMP</obj_property>
+      <obj_property name="ObjectShortName">JUMP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/BRANCH" type="logic">
+      <obj_property name="ElementShortName">BRANCH</obj_property>
+      <obj_property name="ObjectShortName">BRANCH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/ALUSRCB" type="logic">
+      <obj_property name="ElementShortName">ALUSRCB</obj_property>
+      <obj_property name="ObjectShortName">ALUSRCB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/WRITEMEM" type="logic">
+      <obj_property name="ElementShortName">WRITEMEM</obj_property>
+      <obj_property name="ObjectShortName">WRITEMEM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/WRITEREG" type="logic">
+      <obj_property name="ElementShortName">WRITEREG</obj_property>
+      <obj_property name="ObjectShortName">WRITEREG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/MEMTOREG" type="logic">
+      <obj_property name="ElementShortName">MEMTOREG</obj_property>
+      <obj_property name="ObjectShortName">MEMTOREG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/REGDES" type="logic">
+      <obj_property name="ElementShortName">REGDES</obj_property>
+      <obj_property name="ObjectShortName">REGDES</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/WRFLAG" type="logic">
+      <obj_property name="ElementShortName">WRFLAG</obj_property>
+      <obj_property name="ObjectShortName">WRFLAG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/ALUC" type="array">
+      <obj_property name="ElementShortName">ALUC[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUC[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/Q1" type="array">
+      <obj_property name="ElementShortName">Q1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Q1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/Q2" type="array">
+      <obj_property name="ElementShortName">Q2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Q2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/q" type="array">
+      <obj_property name="ElementShortName">q[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/PC" type="array">
+      <obj_property name="ElementShortName">PC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/imm" type="array">
+      <obj_property name="ElementShortName">imm[7:0]</obj_property>
+      <obj_property name="ObjectShortName">imm[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/ramQ" type="array">
+      <obj_property name="ElementShortName">ramQ[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ramQ[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/Flagin" type="array">
+      <obj_property name="ElementShortName">Flagin[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Flagin[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/Flagout" type="array">
+      <obj_property name="ElementShortName">Flagout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Flagout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/addr" type="array">
+      <obj_property name="ElementShortName">addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/Din" type="array">
+      <obj_property name="ElementShortName">Din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Din[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/Dout" type="array">
+      <obj_property name="ElementShortName">Dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/IO0" type="array">
+      <obj_property name="ElementShortName">IO0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IO0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/IO1" type="array">
+      <obj_property name="ElementShortName">IO1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IO1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/IO2" type="array">
+      <obj_property name="ElementShortName">IO2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IO2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/IO3" type="array">
+      <obj_property name="ElementShortName">IO3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IO3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/IO4" type="array">
+      <obj_property name="ElementShortName">IO4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IO4[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/IO5" type="array">
+      <obj_property name="ElementShortName">IO5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IO5[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/IO6" type="array">
+      <obj_property name="ElementShortName">IO6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IO6[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/IO7" type="array">
+      <obj_property name="ElementShortName">IO7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IO7[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/RE" type="logic">
+      <obj_property name="ElementShortName">RE</obj_property>
+      <obj_property name="ObjectShortName">RE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/WE" type="logic">
+      <obj_property name="ElementShortName">WE</obj_property>
+      <obj_property name="ObjectShortName">WE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/io_read" type="logic">
+      <obj_property name="ElementShortName">io_read</obj_property>
+      <obj_property name="ObjectShortName">io_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_BB_tb/io_write" type="logic">
+      <obj_property name="ElementShortName">io_write</obj_property>
+      <obj_property name="ObjectShortName">io_write</obj_property>
+   </wvobject>
+</wave_config>

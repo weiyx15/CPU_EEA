@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "ROM_tb_time_synth.v"
+verilog xil_defaultlib  "../../../../myROM_2.srcs/sim_1/imports/new/ROM_tb.v"
+
+# Do not sort compile order
+nosort

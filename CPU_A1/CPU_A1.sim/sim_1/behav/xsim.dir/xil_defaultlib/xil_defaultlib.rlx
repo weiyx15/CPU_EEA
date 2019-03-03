@@ -1,0 +1,14 @@
+0.6
+2017.1
+Apr 14 2017
+19:10:27
+E:/VivadoProjects/Ex1/CPU_A1/CPU_A1.sim/sim_1/behav/glbl.v,1492045073,verilog,,,,glbl,,,,,,,,
+E:/VivadoProjects/Ex1/CPU_A1/CPU_A1.srcs/sim_1/imports/new/CPU_A_top_tb.v,1506246185,verilog,,,,CPU_A_top_tb,,,,,,,,
+E:/VivadoProjects/Ex1/CPU_A1/CPU_A1.srcs/sources_1/imports/CPU_A.srcs/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v,1505204263,verilog,,,,ALU,,,,,,,,
+E:/VivadoProjects/Ex1/CPU_A1/CPU_A1.srcs/sources_1/imports/CPU_A.srcs/sources_1/imports/Ex1/CtrlUnit/CtrlUnit.srcs/sources_1/new/OP_define.v,1506260215,verilog,,,,,,,,,,,,
+E:/VivadoProjects/Ex1/CPU_A1/CPU_A1.srcs/sources_1/imports/CPU_A.srcs/sources_1/imports/Ex1/CtrlUnit/CtrlUnit.srcs/sources_1/new/ctrlunit.v,1506261472,verilog,,,E:/VivadoProjects/Ex1/CPU_A1/CPU_A1.srcs/sources_1/imports/CPU_A.srcs/sources_1/imports/Ex1/CtrlUnit/CtrlUnit.srcs/sources_1/new/OP_define.v,ctrlunit,,,,,,,,
+E:/VivadoProjects/Ex1/CPU_A1/CPU_A1.srcs/sources_1/imports/CPU_A.srcs/sources_1/imports/Ex1/Ex1_Register/Ex1_Register.srcs/sources_1/new/Register.v,1505185281,verilog,,,,Register,,,,,,,,
+E:/VivadoProjects/Ex1/CPU_A1/CPU_A1.srcs/sources_1/imports/CPU_A.srcs/sources_1/imports/Ex1/PC/PC.srcs/sources_1/new/PC.v,1506137981,verilog,,,,PC,,,,,,,,
+E:/VivadoProjects/Ex1/CPU_A1/CPU_A1.srcs/sources_1/imports/CPU_A.srcs/sources_1/imports/Ex1/RAM/RAM.srcs/sources_1/new/RAM.v,1506235574,verilog,,,,RAM,,,,,,,,
+E:/VivadoProjects/Ex1/CPU_A1/CPU_A1.srcs/sources_1/imports/CPU_A.srcs/sources_1/imports/Ex1/myROM_2.v,1506261490,verilog,,,,ROM_2,,,,,,,,
+E:/VivadoProjects/Ex1/CPU_A1/CPU_A1.srcs/sources_1/imports/CPU_A.srcs/sources_1/new/CPU_A_top.v,1506244787,verilog,,,,CPU_A_top,,,,,,,,

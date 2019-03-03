@@ -1,0 +1,83 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Tue Oct  3 20:47:07 2017
+| Host         : weiyx-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_A_top_control_sets_placed.rpt
+| Design       : CPU_A_top
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    20 |
+| Unused register locations in slices containing registers |    26 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              77 |           40 |
+| No           | No                    | Yes                    |              17 |            6 |
+| No           | Yes                   | No                     |              64 |           16 |
+| Yes          | No                    | No                     |              16 |            3 |
+| Yes          | No                    | Yes                    |              32 |           13 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+-------------------------+---------------------------------+------------------+----------------+
+|           Clock Signal          |      Enable Signal      |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++---------------------------------+-------------------------+---------------------------------+------------------+----------------+
+|  myDivider/current_state_reg[0] |                         |                                 |                1 |              2 |
+|  CLK_IBUF_BUFG                  |                         |                                 |                2 |              2 |
+|  myALU/data_inh_reg[7]_1[0]     |                         |                                 |                3 |              8 |
+|  myALU/data_inh_reg[7][0]       |                         |                                 |                6 |              8 |
+|  myALU/data_inh_reg[7]_0[0]     |                         |                                 |                2 |              8 |
+|  myALU/data_inh_reg[7]_2[0]     |                         |                                 |                3 |              8 |
+|  myALU/data_inh_reg[7]_3[0]     |                         |                                 |                6 |              8 |
+|  myALU/data_inh_reg[7]_4[0]     |                         |                                 |                4 |              8 |
+|  myALU/data_inl_reg[7][0]       |                         |                                 |                3 |              8 |
+|  myIO_2/W_reg[5][7]_i_1_n_0     |                         |                                 |                4 |              8 |
+|  CLK_CPU_BUFG                   | myPC/E[0]               |                                 |                1 |              8 |
+|  CLK_CPU_BUFG                   | myPC/data_inl_reg[0][0] |                                 |                2 |              8 |
+|  CLK_CPU_BUFG                   | myPC/R_reg[0][7][0]     | RESET_IBUF                      |                3 |              8 |
+|  CLK_CPU_BUFG                   | myPC/R_reg[1][7][0]     | RESET_IBUF                      |                3 |              8 |
+|  CLK_CPU_BUFG                   | myPC/R_reg[2][7][0]     | RESET_IBUF                      |                3 |              8 |
+|  CLK_CPU_BUFG                   | myPC/R_reg[3][7][0]     | RESET_IBUF                      |                4 |              8 |
+|  myPC/Flagout_reg[0]_0[0]       |                         |                                 |                6 |              9 |
+|  CLK_CPU_BUFG                   |                         | RESET_IBUF                      |                6 |             17 |
+|  CLK_IBUF_BUFG                  |                         | myDivider/clear                 |                8 |             32 |
+|  CLK_IBUF_BUFG                  |                         | myDivider/cnt_CPU1_carry__2_n_4 |                8 |             32 |
++---------------------------------+-------------------------+---------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     2 |
+| 8      |                    14 |
+| 9      |                     1 |
+| 16+    |                     3 |
++--------+-----------------------+
+
+

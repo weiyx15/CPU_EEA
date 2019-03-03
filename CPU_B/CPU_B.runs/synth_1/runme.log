@@ -1,0 +1,503 @@
+
+*** Running vivado
+    with args -log CPU_A_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_A_top.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source CPU_A_top.tcl -notrace
+Command: synth_design -top CPU_A_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11008 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 347.551 ; gain = 81.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CPU_A_top' [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/new/CPU_A_top.v:3]
+INFO: [Synth 8-638] synthesizing module 'ALU' [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:14]
+WARNING: [Synth 8-6014] Unused sequential element tempa_reg was removed.  [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:21]
+WARNING: [Synth 8-6014] Unused sequential element tempb_reg was removed.  [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:21]
+WARNING: [Synth 8-6014] Unused sequential element tempS_reg was removed.  [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (1#1) [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-638] synthesizing module 'ctrlunit' [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/CtrlUnit/CtrlUnit.srcs/sources_1/new/ctrlunit.v:4]
+INFO: [Synth 8-256] done synthesizing module 'ctrlunit' (2#1) [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/CtrlUnit/CtrlUnit.srcs/sources_1/new/ctrlunit.v:4]
+INFO: [Synth 8-638] synthesizing module 'Register' [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/Ex1_Register/Ex1_Register.srcs/sources_1/new/Register.v:3]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/Ex1_Register/Ex1_Register.srcs/sources_1/new/Register.v:20]
+INFO: [Synth 8-256] done synthesizing module 'Register' (3#1) [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/Ex1_Register/Ex1_Register.srcs/sources_1/new/Register.v:3]
+INFO: [Synth 8-638] synthesizing module 'ROM_2' [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/myROM_2.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ROM_2' (4#1) [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/myROM_2.v:1]
+INFO: [Synth 8-638] synthesizing module 'PC' [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/PC/PC.srcs/sources_1/new/PC.v:4]
+INFO: [Synth 8-256] done synthesizing module 'PC' (5#1) [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/PC/PC.srcs/sources_1/new/PC.v:4]
+INFO: [Synth 8-638] synthesizing module 'RAM' [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/RAM/RAM.srcs/sources_1/new/RAM.v:3]
+WARNING: [Synth 8-290] fork/join block will be implemented as sequential block [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/RAM/RAM.srcs/sources_1/new/RAM.v:15]
+WARNING: [Synth 8-5788] Register unit_reg in module RAM is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'unit_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "unit_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'RAM' (6#1) [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/RAM/RAM.srcs/sources_1/new/RAM.v:3]
+INFO: [Synth 8-638] synthesizing module 'FLAG' [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/FLAG/FLAG.srcs/sources_1/new/FLAG.v:3]
+INFO: [Synth 8-256] done synthesizing module 'FLAG' (7#1) [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/FLAG/FLAG.srcs/sources_1/new/FLAG.v:3]
+INFO: [Synth 8-256] done synthesizing module 'CPU_A_top' (8#1) [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/new/CPU_A_top.v:3]
+WARNING: [Synth 8-3331] design ROM_2 has unconnected port CLK
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 395.645 ; gain = 130.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 395.645 ; gain = 130.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 395.645 ; gain = 130.090
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-5546] ROM "zero" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "R_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/PC/PC.srcs/sources_1/new/PC.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'S_reg' [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'carry_out_reg' [E:/VivadoProjects/Ex1/CPU_B/CPU_B.srcs/sources_1/imports/sources_1/imports/Ex1/ALU/ALU.srcs/sources_1/new/ALU.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 471.082 ; gain = 205.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 263   
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	  16 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 261   
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CPU_A_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module ctrlunit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      3 Bit        Muxes := 1     
+Module Register 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 4     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module ROM_2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module RAM 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 257   
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 256   
+Module FLAG 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (myALU/S_reg[7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myALU/S_reg[6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myALU/S_reg[5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myALU/S_reg[4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myALU/S_reg[3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myALU/S_reg[2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myALU/S_reg[1]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myALU/S_reg[0]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myALU/carry_out_reg) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[0][7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[0][6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[0][5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[0][4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[0][3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[0][2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[0][1]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[0][0]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[1][7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[1][6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[1][5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[1][4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[1][3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[1][2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[1][1]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[1][0]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[2][7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[2][6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[2][5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[2][4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[2][3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[2][2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[2][1]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[2][0]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[3][7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[3][6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[3][5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[3][4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[3][3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[3][2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[3][1]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[3][0]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[4][7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[4][6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[4][5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[4][4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[4][3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[4][2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[4][1]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[4][0]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[5][7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[5][6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[5][5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[5][4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[5][3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[5][2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[5][1]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[5][0]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[6][7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[6][6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[6][5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[6][4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[6][3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[6][2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[6][1]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[6][0]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[7][7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[7][6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[7][5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[7][4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[7][3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[7][2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[7][1]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[7][0]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[8][7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[8][6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[8][5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[8][4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[8][3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[8][2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[8][1]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[8][0]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[9][7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[9][6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[9][5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[9][4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[9][3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[9][2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[9][1]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[9][0]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[10][7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[10][6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[10][5]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[10][4]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[10][3]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[10][2]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[10][1]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[10][0]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[11][7]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[11][6]) is unused and will be removed from module CPU_A_top.
+WARNING: [Synth 8-3332] Sequential element (myRAM/unit_reg[11][5]) is unused and will be removed from module CPU_A_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 501.789 ; gain = 236.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 501.789 ; gain = 236.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 501.789 ; gain = 236.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 501.789 ; gain = 236.234
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 501.789 ; gain = 236.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 501.789 ; gain = 236.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 501.789 ; gain = 236.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 501.789 ; gain = 236.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 501.789 ; gain = 236.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 501.789 ; gain = 236.234
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2123 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 501.789 ; gain = 236.234
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 501.789 ; gain = 236.234
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+130 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 586.824 ; gain = 325.211
+INFO: [Common 17-1381] The checkpoint 'E:/VivadoProjects/Ex1/CPU_B/CPU_B.runs/synth_1/CPU_A_top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.135 . Memory (MB): peak = 586.824 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 29 20:59:34 2017...

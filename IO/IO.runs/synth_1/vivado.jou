@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Thu Sep 28 16:19:34 2017
+# Process ID: 9900
+# Current directory: E:/VivadoProjects/Ex1/IO/IO.runs/synth_1
+# Command line: vivado.exe -log IO_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IO_2.tcl
+# Log file: E:/VivadoProjects/Ex1/IO/IO.runs/synth_1/IO_2.vds
+# Journal file: E:/VivadoProjects/Ex1/IO/IO.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source IO_2.tcl -notrace
