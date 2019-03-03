@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoProjects/Ex1/FLAG/FLAG.srcs/sources_1/new/FLAG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FLAG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoProjects/Ex1/FLAG/FLAG.srcs/sim_1/new/FLAG_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FLAG_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoProjects/Ex1/FLAG/FLAG.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

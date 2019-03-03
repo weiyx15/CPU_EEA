@@ -1,7 +1,0 @@
-Running: xsim.dir/ALU_tb_func_synth/xsimk.exe -simmode gui -wdb ALU_tb_func_synth.wdb -simrunnum 0 -socket 57345
-Design successfully loaded
-Design Loading Memory Usage: 6432 KB (Peak: 6432 KB)
-Design Loading CPU Usage: 108 ms
-Simulation completed
-Simulation Memory Usage: 7140 KB (Peak: 7140 KB)
-Simulation CPU Usage: 171 ms

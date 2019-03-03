@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoProjects/Ex1/Test_inout/Test_inout.srcs/sources_1/new/DRAM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DRAM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoProjects/Ex1/Test_inout/Test_inout.srcs/sim_1/new/DRAM_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DRAM_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/VivadoProjects/Ex1/Test_inout/Test_inout.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
